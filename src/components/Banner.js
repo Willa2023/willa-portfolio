@@ -8,7 +8,7 @@ const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const toRotate = ['Software Developer', 'Web Developer', 'Full Stack Developer'];
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(200-Math.random()*100);
+    const [delta, setDelta] = useState(120-Math.random()*100);
     const period = 2000;
 
     useEffect(() => {
@@ -38,7 +38,7 @@ const Banner = () => {
         } else if(isDeleting && updatedText === ''){
             setIsDeleting(false);
             setLoopNum(prevLoopNum => prevLoopNum + 1);
-            setDelta(500);
+            setDelta(300);
         }
     }
 
@@ -49,7 +49,8 @@ const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to Willa's Portfolio！</span>
                         <h1>{`Hi I'm Willa. `}
-                            <span className='txt-rotate'><span className='wrap'>{text}</span></span>
+                            <br />
+                            <span className='wrap'>{text}</span>
                         </h1>
                         <p>
                             I am a new graduate with a passion for creating innovative solutions, looking for an opportunity to grow as a software developer. I have practical projects in web development, mobile development. I am always looking for new challenges and opportunities to grow.
