@@ -47,7 +47,7 @@ const Banner = () => {
             <Container>
                 <Row className='align-items-center'>
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Welcome to Willa's Portfolio</span>
+                        <span className="tagline">Welcome to Willa's Portfolio！</span>
                         <h1>{`Hi I'm Willa. `}
                             <span className='txt-rotate'><span className='wrap'>{text}</span></span>
                         </h1>
