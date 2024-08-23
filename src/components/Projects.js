@@ -33,15 +33,15 @@ const Projects = () => {
                     <h2>Projects</h2>
                     <p>Here are some of the projects I have worked on</p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                        <Nav variant="pills" defaultActiveKey="/home" >
+                        <Nav variant="pills">
                             <Nav.Item>
-                                <Nav.Link eventKey="first">Tab One</Nav.Link>
+                                <Nav.Link eventKey="first">Full-stack Application</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="second">Tab Two</Nav.Link>
+                                <Nav.Link eventKey="second">Mac Games</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="third">Tab Three</Nav.Link>
+                                <Nav.Link eventKey="third">Android Application</Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Tab.Content>
