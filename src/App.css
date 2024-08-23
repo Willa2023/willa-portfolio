@@ -148,7 +148,7 @@ span.navbar-text {
   transform: scale(1);
 }
 .social-icon a img {
-  width: 40%;
+  width: 50%;
   z-index:1;
   transition:0.3s ease-in-out;
 }
@@ -364,10 +364,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project h2 {
   font-size: 45px;
   font-weight: 700;
-  text-align: center;;
+  text-align: center;
+  color:#27667a;
 }
 .project p {
-  color:#b8b8b8;
+  color:#27667a;
   font-size: 20px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -379,11 +380,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 72%;
   margin: 0 auto 50px auto;
   border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(84, 85, 96, 0.885);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 50%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -421,10 +422,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 55px 0px 0px 55px;
 }
 .nav-link#projects-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
@@ -487,7 +484,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   /* background: linear-gradient(90.21deg, rgba(40,102,122,0.9) -10.91%, rgba(74,47,189,0.5) 131.58%); */
   /* background: linear-gradient(90.21deg, rgba(208, 236, 244, 0.882) -10.91%, rgba(230, 228, 236, 0.716) 131.58%); */
   background-color: #b9d2e2;
-  padding:0 0 150px 0;
+  padding:50px 0 100px 0;
 }
 .contact img {
   width:80%;
@@ -507,9 +504,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 0 10px 0;
   padding: 18px 26px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
+  -webkit-text-fill-color: #27667a !important;
 }
 .contact form input:focus, .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
@@ -529,7 +527,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: #223b47;
   padding: 14px 48px;
   font-size: 18px;
-  margin-top: 15px;
+  margin: 15px 0 15px 0;
   transition: 0.3s ease-in-out;
 }
 .contact form button span {
@@ -549,17 +547,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top:0;
   left:0;
   z-index:0;
-  transition: 100%;
+  transition: 0.3s ease-in-out;
+}
+.contact form p {
+  margin-left: -8px;
+}
+
+/* Footer CSS */
+.footer {
+  background: #b9d2e2;
+  padding: 0 0 50px 0;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #27677ab8;
 }
 
 
-
-
-
 /* Original CSS from Create React App */
-/* .App {
-  background-image: url('./assets/img/banner-bg2.jpg');
-} */
+.App {
+  background: #fff;
+}
 
 .App-logo {
   height: 40vmin;

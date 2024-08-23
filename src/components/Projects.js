@@ -7,21 +7,39 @@ import projectImg3 from "../assets/img/project-img3.png";
 
 const Projects = () => {
 
-    const projects = [
+    const webProjects = [
         {
-            title: 'Project 1',
+            title: 'Snack Shop',
             description: 'This is a project description',
             imgUrl: projectImg1,
         },
         {
-            title: 'Project 2',
+            title: 'React Blog',
             description: 'This is a project description',
             imgUrl: projectImg2,
         },
         {
-            title: 'Project 3',
+            title: 'Encryption',
             description: 'This is a project description',
             imgUrl: projectImg3,
+        },
+    ]
+
+    const mobileProjects = [
+        {
+            title: 'Mevo Map',
+            description: 'This is a project description',
+            imgUrl: projectImg1,
+        },
+        {
+            title: 'Browser',
+            description: 'This is a project description',
+            imgUrl: projectImg1,
+        },
+        {
+            title: 'Animal Matching Game',
+            description: 'This is a project description',
+            imgUrl: projectImg1,
         },
     ]
 
@@ -35,20 +53,17 @@ const Projects = () => {
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills">
                             <Nav.Item>
-                                <Nav.Link eventKey="first">Full-stack Application</Nav.Link>
+                                <Nav.Link eventKey="first">Web Application</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="second">Mac Games</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="third">Android Application</Nav.Link>
+                                <Nav.Link eventKey="second">Mobile Application</Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Tab.Content>
                             <Tab.Pane eventKey="first">
                                 <Row>
                                     {
-                                        projects.map((project, index) => {
+                                        webProjects.map((project, index) => {
                                             return (
                                                 <ProjectCard 
                                                     key={index}
@@ -61,8 +76,22 @@ const Projects = () => {
                                     }
                                 </Row>
                             </Tab.Pane>
-                            <Tab.Pane eventKey="second">Second Tab</Tab.Pane>
-                            <Tab.Pane eventKey="third">Third Tab</Tab.Pane>
+                            <Tab.Pane eventKey="second">
+                                <Row>
+                                    {
+                                        mobileProjects.map((project, index) => {
+                                            return (
+                                                <ProjectCard 
+                                                    key={index}
+                                                    title={project.title}
+                                                    description={project.description}
+                                                    imgUrl={project.imgUrl}
+                                                    />
+                                            )
+                                        })
+                                    }
+                                </Row>
+                            </Tab.Pane>
                         </Tab.Content>
                     </Tab.Container>
                     </Col>
