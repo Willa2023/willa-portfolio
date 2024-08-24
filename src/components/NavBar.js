@@ -50,9 +50,9 @@ const NavBar = () => {
               </Nav>
               <span className="navbar-text">
                   <div className = "social-icon">
-                      <a href="https://www.linkedin.com/in/mingyue-wang-41774a292/"><img src={navIcon1} alt=""/></a>
-                      <a href="#"><img src={navIcon2} alt=""/></a>
-                      <a href="#"><img src={navIcon3} alt=""/></a>
+                      <a href="https://www.linkedin.com/in/mingyue-wang-41774a292/"><img src={navIcon1} alt="linkedin"/></a>
+                      <a href="https://www.facebook.com/profile.php?id=100087393097410"><img src={navIcon2} alt="facebook"/></a>
+                      <a href="https://www.instagram.com/willawang2024"><img src={navIcon3} alt="instagram"/></a>
                   </div>
                   <HashLink to="#contacts">
                     <button className="vvd" onClick={()=>console.log('connect')}>
@@ -65,7 +65,6 @@ const NavBar = () => {
         </Navbar>
       </Router>
     )
-
 }
 
 export default NavBar;
