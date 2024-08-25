@@ -6,7 +6,6 @@ import csharpIcon from '../assets/img/skill-csharp-original.svg';
 import dotnetIcon from '../assets/img/skill-dot-net-original-wordmark.svg';
 import reactIcon from '../assets/img/skill-react-original-wordmark.svg';
 import jsIcon from '../assets/img/skill-javascript-original.svg';
-import tsIcon from '../assets/img/skill-typescript-original.svg';
 import androidIcon from '../assets/img/skill-android-original-wordmark.svg';
 import nodejsIcon from '../assets/img/skill-nodejs-original-wordmark.svg';
 import nextjsIcon from '../assets/img/skill-nextjs-original-wordmark.svg';
@@ -67,16 +66,6 @@ const Skills = () => {
                                     </a>
                                 </div>
                                 <div className="item">
-                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-                                        <img src={jsIcon} alt="javascript" />
-                                    </a>
-                                </div>
-                                <div className="item">
-                                    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> 
-                                        <img src={tsIcon} alt="typescript" />
-                                    </a>
-                                </div>
-                                <div className="item">
                                     <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> 
                                         <img src={nextjsIcon} alt="nextjs" />
                                     </a>
@@ -84,6 +73,11 @@ const Skills = () => {
                                 <div className="item">
                                     <a href="https://nodejs.org" target="_blank" rel="noreferrer"> 
                                         <img src={nodejsIcon} alt="nodejs" />
+                                    </a>
+                                </div>
+                                <div className="item">
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                                        <img src={jsIcon} alt="javascript" />
                                     </a>
                                 </div>
                                 <div className="item">

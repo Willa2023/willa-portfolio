@@ -1,45 +1,54 @@
 import { Container, Col, Row, Nav, Tab } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
 import colorSharp2 from '../assets/img/color-sharp2.png';
-import projectImg1 from "../assets/img/project-img1.png";
-import projectImg2 from "../assets/img/project-img2.png";
-import projectImg3 from "../assets/img/project-img3.png";
+import reactBlog from "../assets/img/react-blog-flame-one.vercel.app_ copy.png";
+import snackshop from "../assets/img/snackshopstock.png";
+import encryption from "../assets/img/encrypt-MainPage copy.png";
+import mevoMap from "../assets/img/androidMap.png";
+import animalMatchingGame from "../assets/img/AnimalMatching.png";
+import bugworld from "../assets/img/bugworld2.png";
 
 const Projects = () => {
 
     const webProjects = [
         {
             title: 'Snack Shop',
-            description: 'This is a project description',
-            imgUrl: projectImg1,
+            description: 'Snack purchasing for clients, and management with AI assistance for admins.',
+            imgUrl: snackshop,
+            linkWeb: 'https://github.com/Willa2023/SnackShop',
         },
         {
             title: 'React Blog',
-            description: 'This is a project description',
-            imgUrl: projectImg2,
+            description: 'Blog for users to manage articles.',
+            imgUrl: reactBlog,
+            linkWeb: 'https://github.com/Willa2023/ReactBlog',
         },
         {
             title: 'Encryption',
-            description: 'This is a project description',
-            imgUrl: projectImg3,
+            description: 'Securely encrypt and decrypt messages.',
+            imgUrl: encryption,
+            linkWeb: 'https://github.com/Willa2023/Encrypt-Decrypt',
         },
     ]
 
     const mobileProjects = [
         {
             title: 'Mevo Map',
-            description: 'This is a project description',
-            imgUrl: projectImg1,
+            description: 'Retrieve vehicle positions, park zones from Mevo public API.',
+            imgUrl: mevoMap,
+            linkWeb: 'https://github.com/Willa2023/Mevo',
         },
         {
-            title: 'Browser',
-            description: 'This is a project description',
-            imgUrl: projectImg1,
+            title: 'Bug World Game',
+            description: 'Bee eats flower, worm eats grass, spider eats worm',
+            imgUrl: bugworld,
+            linkWeb: 'https://github.com/Willa2023/bugworld',
         },
         {
             title: 'Animal Matching Game',
-            description: 'This is a project description',
-            imgUrl: projectImg1,
+            description: 'Matching animal images to win!',
+            imgUrl: animalMatchingGame,
+            linkWeb: 'https://github.com/Willa2023/AnimalMatchingGame',
         },
     ]
 
@@ -53,13 +62,13 @@ const Projects = () => {
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills">
                             <Nav.Item>
-                                <Nav.Link eventKey="first">Web Application</Nav.Link>
+                                <Nav.Link eventKey="first">Advanced Application</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="second">Mobile Application</Nav.Link>
+                                <Nav.Link eventKey="second">lightweight Application</Nav.Link>
                             </Nav.Item>
                         </Nav>
-                        <Tab.Content>
+                        <Tab.Content>x
                             <Tab.Pane eventKey="first">
                                 <Row>
                                     {
@@ -70,6 +79,7 @@ const Projects = () => {
                                                     title={project.title}
                                                     description={project.description}
                                                     imgUrl={project.imgUrl}
+                                                    linkWeb={project.linkWeb}
                                                     />
                                             )
                                         })
@@ -86,6 +96,7 @@ const Projects = () => {
                                                     title={project.title}
                                                     description={project.description}
                                                     imgUrl={project.imgUrl}
+                                                    linkWeb={project.linkWeb}
                                                     />
                                             )
                                         })
@@ -97,7 +108,7 @@ const Projects = () => {
                     </Col>
                 </Row>
             </Container>
-            <img src={colorSharp2} alt="Background Image" className="background-image-right"/>
+            <img src={colorSharp2} alt="Background" className="background-image-right"/>
         </section>
     )
 }
