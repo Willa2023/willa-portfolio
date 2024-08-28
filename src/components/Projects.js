@@ -15,7 +15,7 @@ const Projects = () => {
             title: 'Snack Shop',
             description: 'Snack purchasing for clients, and management with AI assistance for admins.',
             imgUrl: snackshop,
-            linkWeb: 'https://github.com/Willa2023/SnackShop',
+            linkWeb: 'https://snackshopfrontend.z8.web.core.windows.net/',
         },
         {
             title: 'React Blog',

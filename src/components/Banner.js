@@ -17,16 +17,6 @@ const Banner = () => {
     const aboutMe1 = 'As a recent graduate in software development, I am seeking for an opportunity to grow as a software developer. I thrive on solving problems through hands-on projects and continuously learning new skills, especially in emerging technologies.';
     const aboutMe2 = 'With a background in architecture, I’ve developed strong collaboration skills and a solid foundation in design. Transitioning into software development has allowed me to combine these strengths with my passion for innovation and creativity.';
 
-    useEffect(() => {
-        let ticker = setInterval(()=>{
-            tick();
-        }, delta);
-
-        return () => {
-            clearInterval(ticker);
-        };
-    }, [text]);
-
     const tick = () => {
         let i = loopNum % toRotate.length;
         let fullText = toRotate[i];
@@ -48,6 +38,16 @@ const Banner = () => {
         }
     }
 
+    useEffect(() => {
+        let ticker = setInterval(()=>{
+            tick();
+        }, delta);
+
+        return () => {
+            clearInterval(ticker);
+        };
+    }, [text]);
+
     return (
         <Router>
             <section className="banner" id="home">
@@ -57,7 +57,9 @@ const Banner = () => {
                             <span className="tagline">Welcome to my Portfolio！</span>
                             <h1>{`Hi, I'm Willa. `}
                                 <br />
-                                <span className='wrap'>{text}</span>
+                                <span className='txt-rotate' dataPeriod="1000" data-rotate='["Software Developer", "Frontend ? Backend ?", "Full Stack Developer"]'>
+                                    <span className='wrap' >{text}</span>
+                                </span>
                             </h1>
                             <p>{aboutMe1}</p>
                             <p>{aboutMe2}</p>

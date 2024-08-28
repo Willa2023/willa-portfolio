@@ -342,13 +342,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   margin: 0 auto 15px auto;
 }
-.react-multi-carousel-list {
-  padding: 0 10px;
-}
-.react-multiple-carousel__arrow--right {
-  right: -30px; 
-  transform: translateX(30px); 
-}
 
 
 /* Projects CSS */
@@ -357,12 +350,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   background-color: #b9d2e2;
   background: linear-gradient(180.21deg, rgba(185, 210, 226, 0.9) -10.91%, rgba(159, 152, 192, 0.3) 131.58%);
-  /* background-image: url('./assets/img/cloud3.png'); */
-  /* background-size:cover;
-  background-position-x: left;
-  background-size: cover;
-  background-position: no repeat; */
-
 }
 .project h2 {
   font-size: 45px;
