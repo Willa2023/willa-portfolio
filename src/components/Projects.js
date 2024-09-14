@@ -1,8 +1,8 @@
 import { Container, Col, Row, Nav, Tab } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
 import colorSharp2 from '../assets/img/color-sharp2.png';
-import reactBlog from "../assets/img/react-blog-flame-one.vercel.app_ copy.png";
 import snackshop from "../assets/img/snackshopstock.png";
+import birdwood from "../assets/img/newBirdwood.png";
 import encryption from "../assets/img/encrypt-MainPage copy.png";
 import mevoMap from "../assets/img/androidMap.png";
 import animalMatchingGame from "../assets/img/AnimalMatching.png";
@@ -18,10 +18,10 @@ const Projects = () => {
             linkWeb: 'https://snackshopfrontend.z8.web.core.windows.net/',
         },
         {
-            title: 'React Blog',
-            description: 'Blog for users to manage articles.',
-            imgUrl: reactBlog,
-            linkWeb: 'https://github.com/Willa2023/ReactBlog',
+            title: 'Birdwood Reserve',
+            description: 'Donation for Birdwood Reserve Environmental Project.',
+            imgUrl: birdwood,
+            linkWeb: 'https://www.birdwoodreserve.com',
         },
         {
             title: 'Encryption',
